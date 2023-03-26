@@ -319,9 +319,12 @@ function getReadings(){
       var flag = 1024 - myObj.moistureValue;
       var finalHum = (flag/1024) * 100;
 
-      gaugePH.value = Math.round(ph);
-      gaugeTemp.value = Math.round(temp);
-      gaugeHum.value = Math.round(finalHum);
+      // gaugePH.value = Math.round(ph);
+      // gaugeTemp.value = Math.round(temp);
+      // gaugeHum.value = Math.round(finalHum);
+      gaugePH.value = 0.00;
+      gaugeTemp.value = 0.00;
+      gaugeHum.value = 0.00;
     }
   };
   xhr.open("GET", "/readings", true);
