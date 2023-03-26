@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hydro Teknika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon-bg.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+  </head>
+  <body>
+    <div id="topnav">
+        <img id="header-img" src="favicon-bg.png" alt="">
+        <h1><span class="blue">&lt;</span>Hydro<span class="blue">&gt;</span> <span class="yellow">Teknika</pan></h1>
+        <h2>&nbsp&nbsp&nbsp&nbspIndoor Hydroponics Monitoring System by Team JADE</a></h2>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">PH Value</p>
+          <canvas id="gauge-ph"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Temperature</p>
+          <canvas id="gauge-temperature"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Moisture Level</p>
+          <canvas id="gauge-humidity"></canvas>
+        </div>
+      </div>
+    </div>
+    <center>
+      <table class="container">
+      	<thead>
+      		<tr>
+      			<th><h1>Parameters</h1></th>
+      			<th><h1>Value</h1></th>
+            <th><h1>Status</h1></th>
+      			<th><h1>Optimal Range</h1></th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<td>pH Level</td>
+      			<td id="d1">0.00</td>
+            <td id="s1">0.00</td>
+      			<td>6.1 pH to 6.8 pH</td>
+      		</tr>
+      		<tr>
+      			<td>Temperature</td>
+      			<td id="d2">0.00</td>
+            <td id="s2">0.00</td>
+      			<td>21 to 32 Degree Celsius</td>
+      		</tr>
+      		<tr>
+            <td>Soil Moisture</td>
+      			<td id="d3">0.00</td>
+            <td id="s3">0.00</td>
+      			<td>60% to 70%</td>
+      		</tr>
+      	</tbody>
+      </table>
+      <div class="content" align="center;">
+        <p><h3 style="color: #FFF842; font-size: 30px;">Team JADE</h3></p>
+        <div class="card-grid">
+          <div class="card">
+            <p class="card-title">Group Members</p>
+            <img id="photo" src="teamjade.jpg" width="50%" height="80%">
+          </div>
+        </div>
+      </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
