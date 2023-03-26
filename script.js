@@ -139,7 +139,8 @@ var gaugePH = new RadialGauge({
     colorValueBoxRect: "#049faa",
     colorValueBoxRectEnd: "#049faa",
     colorValueBoxBackground: "#f1fbfc",
-    valueInt: 2
+    valueInt: 2,
+    value: 7.5
 }).draw();
 
 var gaugeTemp = new LinearGauge({
@@ -213,7 +214,8 @@ var gaugeTemp = new LinearGauge({
     colorValueBoxRectEnd: "#049faa",
     colorValueBoxBackground: "#f1fbfc",
     valueInt: 2,
-    colorBarProgressEnd: "#03C0C1"
+    colorBarProgressEnd: "#03C0C1",
+    value: 25
 }).draw();
 
 
@@ -296,7 +298,8 @@ var gaugeHum = new RadialGauge({
   colorBorderMiddle: "#ccc",
   colorBorderMiddleEnd: "#ccc",
   colorBorderInner: "#eee",
-  colorBorderInnerEnd: "#eee"
+  colorBorderInnerEnd: "#eee",
+  value: 50
 }).draw();
 
 //round off Function
@@ -319,12 +322,10 @@ function getReadings(){
       var flag = 1024 - myObj.moistureValue;
       var finalHum = (flag/1024) * 100;
 
-      // gaugePH.value = Math.round(ph);
-      // gaugeTemp.value = Math.round(temp);
-      // gaugeHum.value = Math.round(finalHum);
-      gaugePH.value = 0.00;
-      gaugeTemp.value = 0.00;
-      gaugeHum.value = 0.00;
+      gaugePH.value = Math.round(ph);
+      gaugeTemp.value = Math.round(temp);
+      gaugeHum.value = Math.round(finalHum);
+      
     }
   };
   xhr.open("GET", "/readings", true);
