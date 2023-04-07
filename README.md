@@ -1,0 +1,5 @@
+# hydroteknika.github.io
+
+The project aims to build a prototype for monitoring the pH and temperature level of water and the moisture level of soil in a hydroponic setup. The goal is to create a web interface that displays these measured values and indicates whether they are within the optimal range for the Pothos plant. The project utilizes various components, including Arduino Uno, ESP8266 NodeMCU, DS18B20 Temperature Sensor, pH Sensor, and Soil Humidity Hygrometer Moisture Sensor. The project aims to build a prototype for monitoring the pH and temperature level of water and the moisture level of soil in a hydroponic setup. The goal is to create a web interface that displays these measured values and indicates whether they are within the optimal range for the Pothos plant. The project utilizes various components, including Arduino Uno, ESP8266 NodeMCU, DS18B20 Temperature Sensor, pH Sensor, and Soil Humidity Hygrometer Moisture Sensor.
+
+![hydroteknika1](https://user-images.githubusercontent.com/61749438/230556978-a37bada1-df8e-49bc-864c-44b63b836488.PNG)
